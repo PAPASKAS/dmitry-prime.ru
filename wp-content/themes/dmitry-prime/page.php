@@ -15,28 +15,27 @@
 get_header();
 ?>
 
-    <section class="home-banner-area">
+    <section class="intro">
         <div class="container">
-            <div class="row fullscreen d-flex align-items-center">
-                <div class="banner-content col-md-6 col-sm-12 justify-content-center">
+            <div class="row">
+                <div class="col-lg-6 col-12 intro__content">
                     <div class="me wow fadeInDown" data-wow-duration="1s" data-wow-delay="1.2s"><?php the_field('banner_cloud') ?></div>
                     <h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.7s"><?php the_field('my_name') ?></h1>
                     <div class="designation mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay="2.1s">
-                        <?php the_field('banner_description_one') ?>
+                        <?php the_field('banner_description_one') ?> <br/>
                         <span class="designer"><?php the_field('banner_description_two_one') ?></span>
-                        <?php the_field('banner_description_two_two') ?>
+                        <?php the_field('banner_description_two_two') ?> <br/>
                         <span class="developer"><?php the_field('banner_description_three') ?></span>
                     </div>
                 </div>
-                <div class="banner-img col-md-6 col-sm-10">
+                <div class="col-lg-6 col-12 intro__img">
                     <img class="img-fluid" src="<?php the_field('banner_photo_link') ?>" alt="my photo" />
                 </div>
             </div>
-        </div>
     </section>
 
 
-    <section class="about-area section-gap">
+    <section class="about-area">
         <div class="container">
             <div class="row align-items-center justify-content-between flex-wrap-reverse">
                 <div class="col-lg-6 about-left">
@@ -138,6 +137,7 @@ get_header();
     </section>
 
 
+    <!-- two rules -->
     <section class="testimonials_area section-gap">
         <div class="container">
             <div class="section-title">
@@ -149,7 +149,7 @@ get_header();
                         $content = get_field('two_rule_content');
                         $li_arr = explode("||", $content);
                         foreach($li_arr as $li) {
-                            echo "<li><span>" . $li . "</span></li>";
+                            echo "<li class='wow fadeInLeft'><span>" . $li . "</span></li>";
                         }
                     ?>
                 </ul>

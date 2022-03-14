@@ -1,7 +1,18 @@
 //--------- Start Banner Area -------------//
 .home-banner-area {
+    padding: 100px 0 100px 0;
     @media (max-width:991px) {
         padding: 100px 0 150px 0;
+    }
+    // bug fix
+    @media (max-width:576px) {
+        padding: 100px 0 300px 0;
+    }
+    @media (max-width:500px) {
+        padding: 100px 0 150px 0;
+    }
+    @media(max-width: 460px) {
+        padding: 100px 0 100px 0;
     }
 }
 
@@ -66,15 +77,6 @@
 
 .banner-img {
     text-align: right;
-    position: relative;
-    left: 160px;
-    @media(max-width: 1480px) {
-        left: 0px;
-    }
-    @media(max-width: 991px) {
-        //right:0;
-        //margin: 0 auto;
-    }
     img {
         @media(max-width: 1480px) {
             max-width: 80%;
@@ -83,6 +85,79 @@
 }
 
 //--------- End Banner Area -------------//
+
+// start intro
+.intro{
+    padding:150px 0 50px 0;
+    &__content {
+        h1 {
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 66px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            @media ( max-width: 1024px) {
+                font-size: 45px;
+            }
+            @media ( max-width: 576px) {
+                font-size: 35px;
+            }
+            @media ( max-width: 325px) {
+                font-size: 32px;
+            }
+        }
+        .me {
+            background: $primary-color2;
+            padding: 18px;
+            display: inline-block;
+            color: $white;
+            font-size: 16px;
+            border-radius: 8px;
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                right: 0;
+                bottom: -15px;
+                width: 0;
+                height: 0;
+                border-left: 26px solid transparent;
+                border-right: 0px solid transparent;
+                border-top: 24px solid $primary-color2;
+            }
+        }
+        .designation {
+            max-width: 390px;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 42px;
+            @media ( max-width: 576px) {
+                font-size: 25px;
+            }
+            .designer {
+                color: $primary-color;
+            }
+            .developer {
+                color: $primary-color2;
+            }
+        }
+    }
+    &__img {
+        display: flex;
+        justify-content: end;
+        @media(max-width: 768px) {
+            justify-content: center;
+        }
+        img {
+            @media(max-width:992px) {
+                max-width:80%;
+            }
+        }
+    }
+}
+// end intro
+
+
 //--------- start brand Area -------------//
 .brand-wrap {
     background: $white;
@@ -117,17 +192,13 @@
 
 .about-area {
     img {
-        transform: scale(-1, 1)
+        transform: scale(-1, 1);
+        width:80%;
     }
     .section-title {
         margin-bottom: 0;
         @media (max-width: 1024px) {
             padding-bottom: 0px;
-        }
-    }
-    .about-left {
-        @media (max-width: 991px) {
-            //display: none;
         }
     }
     .primary-btn.white {

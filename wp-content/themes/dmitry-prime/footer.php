@@ -26,23 +26,23 @@
             </div>
         </div>
 
-        <div class="row mt-80">
-            <div class="col">
+        <div class="row mt-80 justify-content-center">
+            <div class="col-2">
                 <div class="contact-box">
                     <a href="<?php the_field('whatsapp_link') ?>" target="_blank"><img src="<?php bloginfo('template_directory') ?>/img/icons/whatsapp_48dp.svg" alt="whatsapp"></a>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-2">
                 <div class="contact-box">
                     <a href="<?php the_field('vk_link') ?>" target="_blank"><img src="<?php bloginfo('template_directory') ?>/img/icons/vk_48dp.svg" alt="vk"></a>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-2">
                 <div class="contact-box">
                     <a href="<?php the_field('viber_link') ?>" target="_blank"><img src="<?php bloginfo('template_directory') ?>/img/icons/viber_48dp.svg" alt="viber"></a>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-2">
                 <div class="contact-box">
                     <a href="<?php the_field('telegram_link') ?>" target="_blank"><img src="<?php bloginfo('template_directory') ?>/img/icons/telegram_48dp.svg" alt="telegram"></a>
                 </div>
@@ -51,30 +51,9 @@
     </div>
 </footer>
 
-
-<!-- ####################### Start Scroll to Top Area ####################### -->
-<div id="back-top">
-    <a title="Go to Top" href="#">
-        <i class="lnr lnr-arrow-up"></i>
-    </a>
-</div>
 <!-- ####################### End Scroll to Top Area ####################### -->
 
-<script src="<?php bloginfo('template_directory') ?>/js/vendor/jquery-2.2.4.min.js"></script>
-<script src="<?php bloginfo('template_directory') ?>/js/vendor/bootstrap.min.js"></script>
-<script src="<?php bloginfo('template_directory') ?>/js/easing.min.js"></script>
-<script src="<?php bloginfo('template_directory') ?>/js/hoverIntent.js"></script>
-<script src="<?php bloginfo('template_directory') ?>/js/superfish.min.js"></script>
-<script src="<?php bloginfo('template_directory') ?>/js/mn-accordion.js"></script>
-<script src="<?php bloginfo('template_directory') ?>/js/jquery.ajaxchimp.min.js"></script>
-<script src="<?php bloginfo('template_directory') ?>/js/jquery.magnific-popup.min.js"></script>
-<script src="<?php bloginfo('template_directory') ?>/js/owl.carousel.min.js"></script>
-<script src="<?php bloginfo('template_directory') ?>/js/jquery.nice-select.min.js"></script>
-<script src="<?php bloginfo('template_directory') ?>/js/isotope.pkgd.min.js"></script>
-<script src="<?php bloginfo('template_directory') ?>/js/jquery.circlechart.js"></script>
-<script src="<?php bloginfo('template_directory') ?>/js/mail-script.js"></script>
 <script src="<?php bloginfo('template_directory') ?>/js/wow.min.js"></script>
 <script src="<?php bloginfo('template_directory') ?>/js/main.js"></script>
 </body>
-
 </html>

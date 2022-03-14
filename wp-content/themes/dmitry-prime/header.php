@@ -26,17 +26,15 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 
-    <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/linearicons.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/bootstrap.css">
-    <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/magnific-popup.css">
-    <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/nice-select.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/animate.min.css">
-    <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/owl.carousel.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/main.css">
 </head>
 
 <body>
+
+<div class="d-none" id="scrollCheck"></div>
 
 <div class="preloader-area">
     <div class="loader-box">
@@ -45,30 +43,22 @@
 </div>
 
 
-<header id="header">
-    <div class="container main-menu">
-        <div class="row align-items-center d-flex">
-            <div id="logo">
-                <a href="index.html"><img src="<?php bloginfo('template_directory') ?>/img/logo.png" alt="logo" title="" /></a>
-            </div>
-            <nav id="nav-menu-container">
+<header class="header header-scrolled back-top-animation">
+    <div class="container">
+        <div class="d-flex justify-content-end">
+            <nav id="nav-menu-container my-auto">
                 <ul class="nav-menu">
-                    <li class=""><a class="active" href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li class="menu-has-children"><a href="#">Pages</a>
-                        <ul>
-                            <li><a href="elements.html">Elements</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="services.html">Service</a></li>
-                            <li><a href="portfolio-details.html">Portfolio Details</a></li>
-                        </ul>
+                    <li>
+                        <a href="<?php the_field('whatsapp_link') ?>" target="_blank"><img src="<?php bloginfo('template_directory') ?>/img/icons/whatsapp_48dp.svg" alt="whatsapp"></a>
                     </li>
-                    <li class="menu-has-children"><a href="">Blog</a>
-                        <ul>
-                            <li><a href="blog-home.html">Blog Home</a></li>
-                            <li><a href="blog-single.html">Blog Single</a></li>
-                        </ul>
+                    <li>
+                        <a href="<?php the_field('vk_link') ?>" target="_blank"><img src="<?php bloginfo('template_directory') ?>/img/icons/vk_48dp.svg" alt="vk"></a>
+                    </li>
+                    <li>
+                        <a href="<?php the_field('viber_link') ?>" target="_blank"><img src="<?php bloginfo('template_directory') ?>/img/icons/viber_48dp.svg" alt="viber"></a>
+                    </li>
+                    <li>
+                        <a href="<?php the_field('telegram_link') ?>" target="_blank"><img src="<?php bloginfo('template_directory') ?>/img/icons/telegram_48dp.svg" alt="telegram"></a>
                     </li>
                 </ul>
             </nav>
